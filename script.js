@@ -1,6 +1,8 @@
 // global variables
 var previousSearch = JSON.parse(localStorage.getItem("cities")) || [];
 
+renderButtons();
+
 // function to determine current weather forecast
 function weatherToday () {
 
@@ -245,7 +247,7 @@ function renderButtons() {
 		$(".oldSearch").append(a);
 	}
 
-	$(".cityName").on("click", function(event) {
+	$(".prevName").on("click", function(event) {
 		event.preventDefault();
 
 		var city = $(this).data("name");
