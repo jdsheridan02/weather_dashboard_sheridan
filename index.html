@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- personal css styleshee link -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- bootsrap external library link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    
+    <section class="container">
+        <!-- creating a column for current and previous city searches for weather forecasts -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="currentCity">
+                    <p>City Search: </p>
+                    <input type="text" id="citySearch">
+                    <button id="forecast" class="btn btn-light">Search</button>
+                </div>
+                <div class="previousCities">
+                    <p>Previous cities:</p>
+                    <ul class="oldSearch"></ul>
+                </div>
+            </div>
+        
+            <div class="col-md-8 border">
+                <h3 id="cityName"></h3>
+                <ul>
+                    <li id="temperature"></li>
+                    <li id="humidity"></li>
+                    <li id="windSpeed"></li>
+                    <li id="uvIndex"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- creating new row and div for the 5 day forecast, separating each day as a card  -->
+        <div class="row">
+            <!-- Day One -->
+            <div class="col-sm-2 offset-sm-2">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <p class="card-title dayOne"></p>
+                        <p class="card-text iconOne"></p>
+                        <p class="card-text tempOne"></p>
+                        <p class="card-text humidityOne"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day Two -->
+            <div class="col-sm-2">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <p class="card-title dayTwo"></p>
+                        <p class="card-text iconTwo"></p>
+                        <p class="card-text tempTwo"></p>
+                        <p class="card-text humidityTwo"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day Three -->
+            <div class="col-sm-2">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <p class="card-title dayThree"></p>
+                        <p class="card-text iconThree"></p>
+                        <p class="card-text tempThree"></p>
+                        <p class="card-text humidityThree"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day Four -->
+            <div class="col-sm-2">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <p class="card-title dayFour"></p>
+                        <p class="card-text iconFour"></p>
+                        <p class="card-text tempFour"></p>
+                        <p class="card-text humidityFour"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day Five -->
+            <div class="col-sm-2">
+                <div class="card" style="width: 8rem;">
+                    <div class="card-body">
+                        <p class="card-title dayFive"></p>
+                        <p class="card-text iconFive"></p>
+                        <p class="card-text tempFive"></p>
+                        <p class="card-text humidityFive"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- link to jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- used to help calculate date -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

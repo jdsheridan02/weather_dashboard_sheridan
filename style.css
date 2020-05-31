@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600;1,700&display=swap');
+
+
+body {
+    background-image: url("./images/mochagrunge.png");
+}
+
+header { 
+    background: rgb(215,209,35);
+    background: linear-gradient(90deg, rgba(215,209,35,1) 15%, rgba(2,0,36,1) 57%, rgba(2,9,51,1) 72%, rgba(0,114,228,1) 96%, rgba(190,153,86,1) 100%);
+    opacity: .7;
+    padding: 5px;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.currentCity {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.previousCities {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: slategray;
+    margin-top: 15px;
+    border: 1px solid;
+	border-radius: 0.25rem;
+}
+
+
+.card-body {
+    background-color: slategray;
+	padding: 0.35rem;
+}
